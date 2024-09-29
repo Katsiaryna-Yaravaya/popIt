@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  font: 16px 'Roboto', sant-serif;
+  width: 100%;
+  height: 100vh;
+}
+
+button {
+  border: none;
+  padding: 8px 32px;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  height: 150px;
+}
+
+.container {
+  padding: 20px 40px;
+}
+
+/*-------------------------header------------------------*/
+
+.header {
+  background: no-repeat url("../images/background.png");
+  background-size: cover;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16%;
+}
+
+.header__logo a {
+  color: #000000;
+}
+
+.header__menu {
+  display: flex;
+  list-style-type: none;
+}
+
+.header__menu-item a {
+  margin-left: 20px;
+  color: #000000;
+}
+
+.header__banner {
+  color: #ffffff;
+  max-width: 552px;
+  margin-bottom: 8%;
+}
+
+.header__banner-title {
+  font-size: 136px;
+}
+
+.header__banner-text {
+  font-size: 24px;
+  margin-bottom: 18%;
+}
+
+.header__banner-button {
+  font-size: 20px;
+  background: #cbf3f0;
+}
+
+/*-------------------------main------------------------*/
+
+.main {
+  background: #cbf3f0;
+}
+
+.main__title {
+  text-align: center;
+  font-size: 24px;
+  margin: 32px 0;
+}
+
+.main__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.main__card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main__card-text {
+  margin: 16px 0;
+}
+
+.main__card-button{
+  margin-bottom: 32px;
+  background: #ffbf69;
+}
+
+/*-------------------------footer------------------------*/
+
+.footer {
+  background: #333333;
+}
+
+.footer__menu{
+  justify-content: space-between;
+}
+
+.footer__menu-item a {
+  color: #ffffff;
+}
+
+/*-------------------------media------------------------*/
+
+@media (max-width: 866px) {
+  .header__banner {
+    max-width: 452px;
+  }
+
+  .header__banner-title {
+    font-size: 112px;
+  }
+}
+
+@media (max-width: 566px) {
+  .footer__menu{
+    display: block;
+  }
+}
+
+@media (max-width: 488px) {
+  .header__inner {
+    display: block;
+    margin-bottom: 6%;
+  }
+
+  .header__menu {
+    display: block;
+  }
+
+  .header__menu-item a {
+    margin-left: 0;
+  }
+
+  .header__banner {
+    max-width: 452px;
+  }
+
+  .header__banner-title {
+    font-size: 86px;
+  }
+
+  .header__banner-text {
+    font-size: 16px;
+    margin-bottom: 12%;
+  }
+
+  .header__banner-button {
+    font-size: 16px;
+  }
+}
+
+
+
+
+
+
